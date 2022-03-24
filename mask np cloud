@@ -1,0 +1,8 @@
+mask = np.array(Image.open("cloud.png"))
+mask[mask == 1] = 255
+
+wordcloud = WordCloud(background_color = "white", stopwords = excluir_palabras, max_words = 50, mask = mask).generate(text)
+plt.imshow(wordcloud)
+plt.axis("off")
+
+plt.show();
