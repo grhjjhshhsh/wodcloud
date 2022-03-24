@@ -1,0 +1,5 @@
+excluir_palabras = ['de', 'la', 'en', 'para', 'se', 'una', 'y', 'el', 'para', 'esto', 'en', 'que', 'los', 'las', 'Esta', 'este', 'también', 'todo', 'más', 'un', 'por', 'par', 'sin', 'ou', 'à', 'ce', 'a', 'ha', 'es', 'plus', 'leur', 'se', 'del', 'qué', 'como', 'todos', 'otra', 'porque', 'otro', 'dar']
+wordcloud = WordCloud(background_color = 'white', stopwords = excluir_palabras, max_words = 50).generate(text)
+plt.imshow(wordcloud)
+plt.axis("off")
+plt.show();
